@@ -1,9 +1,9 @@
-import LoginRegisterPanel from './components/LoginRegisterPanel/LoginRegisterPanel';
+import LoginScreen from "./components/loginScreen/loginScreen";
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-indigo-100">
-      <LoginRegisterPanel />
+    <main>
+      <LoginScreen />
     </main>
   );
 }
