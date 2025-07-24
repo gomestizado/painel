@@ -21,14 +21,13 @@
 }
 
 .container a{
-    color: #333;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
 .container button{
-    background: linear-gradient(90deg, #777cf4 -50%, #f47777 150%);
+    background: linear-gradient(90deg, #777cf4 -100%, #f47777 140%);
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -41,9 +40,21 @@
     cursor: pointer;
 }
 
+.container button:hover{
+    background: linear-gradient(90deg, #f47777 -50%, #777cf4 200%);
+}
+
 .container button.hidden{
     background: transparent;
+    border: 1px solid transparent;
     border-color: #fff;
+    color: #fff;
+}
+
+.container button.hidden:hover{
+    background: #b8b8b850;
+    border-color: #fff;
+    color: #fff;
 }
 
 .container form{
@@ -109,11 +120,11 @@
     }
 }
 
-.social-icons{
-    margin: 20px 0;
-}
+.social-icons {
+  margin: 20px 0;
 
-.social-icons a{
+  a.icon {
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 20%;
     display: inline-flex;
@@ -122,6 +133,24 @@
     margin: 0 3px;
     width: 40px;
     height: 40px;
+    transition: all 0.1s ease;
+
+    // Ícone dentro do link
+    svg {
+      color: #333;
+      transition: color 0.1s ease;
+    }
+
+    &:hover {
+      background: linear-gradient(90deg, #777cf4 -70%, #f47777 120%);
+      border: none;      
+      border-color: transparent;
+
+      svg {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .toggle-container{
@@ -145,7 +174,7 @@
     background-color: #512da8;
     height: 100%;
     // background: linear-gradient(to right, #5c6bc0, #512da8);
-    background: linear-gradient(90deg, #777cf4 0%, #f47777 100%);
+    background: linear-gradient(90deg, #777cf4 0%, #f47777 80%);
     color: #fff;
     position: relative;
     left: -100%;
