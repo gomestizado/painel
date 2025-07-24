@@ -28,12 +28,12 @@
 }
 
 .container button{
-    background-color: #512da8;
+    background: linear-gradient(90deg, #777cf4 -50%, #f47777 150%);
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
     border: 1px solid transparent;
-    border-radius: 8px;
+    border-radius: 20px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -42,7 +42,7 @@
 }
 
 .container button.hidden{
-    background-color: transparent;
+    background: transparent;
     border-color: #fff;
 }
 
@@ -144,7 +144,8 @@
 .toggle{
     background-color: #512da8;
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    // background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(90deg, #777cf4 0%, #f47777 100%);
     color: #fff;
     position: relative;
     left: -100%;
